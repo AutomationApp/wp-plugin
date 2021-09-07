@@ -1,0 +1,64 @@
+.WAE_form .form-control { max-width: 100% }
+.WAE_title { font-size: 24px; border-bottom: 1px dashed #ccc; font-weight: bold; margin-bottom: 20px; padding-bottom: 10px }
+.panel-title { font-weight: bold }
+.panel-body { padding: 20px; }
+/*Common CSS*/
+*[align="center"] { text-align: center }
+*[align="left"] { text-align: left }
+*[align="right"] { text-align: right }
+.hand { cursor: pointer; cursor: hand }
+.WAE-spacer { display: block; height: 15px; clear: both }
+.WAE-spacer.h_0 { height: 0px }
+.WAE-spacer.h_5 { height: 5px }
+.WAE-spacer.h_10 { height: 10px }
+.WAE-spacer.h_15 { height: 15px }
+.WAE-spacer.h_20 { height: 20px }
+#WAE_body_lock { position: fixed; left: 0px; top: 0px; z-index: 1000; width: 100%; height: 100%; cursor: progress; }
+.WAE_model { position: fixed; top: 0px; left: 0px; z-index: 100000000; background: rgba(0,0,0,0.5); width: 100%; height: 100%; text-align: center; display: table; vertical-align: middle }
+.WAE_model_container { margin: 0 auto; position: relative; display: table-cell; vertical-align: middle; text-align: center }
+.WAE_model_inner { width: 90%; background: #fff; padding: 20px; border-radius: 5px; max-width: 650px; margin: 0 auto; position: relative }
+.WAE_model_inner_holder { max-height: 500px; overflow-y: auto; text-align: left }
+.WAE_model_close { position: absolute; top: 0px; right: -30px; background: #fff; height: 25px; width: 25px; text-align: center; border-radius: 5px; font-size: 16px; line-height: 26px; cursor: pointer; cursor: hand }
+#WAE_form_loader { display: inline-block; margin-left: 15px }
+#WAE_form_loader .WAE_loader { margin-right: 5px }
+.WAE_loader { border: 5px solid #f3f3f3; border-radius: 50%; border-top: 5px solid #000; width: 25px; height: 25px; -webkit-animation: WAE_loader 2s linear infinite; /* Safari */ animation: WAE_loader 2s linear infinite; display: inline-block; vertical-align: middle }
+@-webkit-keyframes WAE_loader { 0% {
+-webkit-transform: rotate(0deg);
+}
+ 100% {
+-webkit-transform: rotate(360deg);
+}
+}
+ @keyframes WAE_loader { 0% {
+transform: rotate(0deg);
+}
+ 100% {
+transform: rotate(360deg);
+}
+}
+#WAE_form_opt { display: inline-block; margin-left: 15px; color: green }
+#WAE_form_opt.opt_0 { color: #dc3545 }
+.WAE_form label.error { color: #dc3545; font-size: 12px; font-weight: normal; }
+/*Common CSS*/
+.form_steps_data { display: none }
+.form_steps_data.active { display: block }
+.form_steps { list-style: none; padding: 0px; margin: 0px; }
+.form_steps li { display: inline-block; width: 50%; background: #f5f5f5; padding: 10px; border-radius: 5px; position: relative; float: left }
+.form_steps li.active { background: #5cb85c; color: #fff; font-weight: bold }
+.form_steps li:first-child { border-top-right-radius: 0px; border-bottom-right-radius: 0px }
+.form_steps li:last-child { padding-left: 35px; border-top-left-radius: 0px; border-bottom-left-radius: 0px }
+.form_steps li:first-child::after { content: ""; position: absolute; display: block; width: 0; height: 0; top: 50%; left: 100%; margin-top: -20px; border-top: 20px solid transparent; border-bottom: 20px solid transparent; border-left: 20px solid #f5f5f5; z-index: 2; }
+.form_steps li:first-child.active::after { border-left: 20px solid #5cb85c; }
+li.selectAllOption { background: #f5f5f5; }
+li.selectAllOption label { font-weight: bold }
+/*Checkbox*/
+.cb-container { position: relative; padding-left: 25px; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; margin-bottom: 0px; line-height: 24px; font-weight: normal }
+.cb-container input { position: absolute; opacity: 0; cursor: pointer; height: 0; width: 0; }
+.checkmark { position: absolute; top: 5px; left: 0; height: 15px; width: 15px; background-color: #eee; border: 1px solid #423e37; border-radius: 2px; }
+.cb-container:hover input ~ .checkmark { background-color: #ccc; }
+.cb-container input:checked ~ .checkmark { background-color: #eee; }
+.checkmark:after { content: ""; position: absolute; display: none; }
+.cb-container input:checked ~ .checkmark:after { display: block; }
+.cb-container .checkmark::after { left: 4px; top: 1px; width: 6px; height: 10px; border: solid #423e37; border-width: 0 3px 3px 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
+/*Checkbox*/
+.allOrderWarning{ color:red}
