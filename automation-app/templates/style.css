@@ -1,0 +1,26 @@
+body .app_setting_wrapper h2 { font-size: 20px; }
+body .app_setting_wrapper h3 { font-size: 18px; }
+body .app_setting_wrapper p { font-size: 16px; }
+.app_setting_container form .form-label { display: inline-block; margin-bottom: .5rem;
+font-weight: 700; font-size: 14px; }
+.app_setting_container form .form-control { display: block; width: 100%; height: calc(2.25rem + 2px); padding: .375rem .75rem;
+font-size: 1rem; line-height: 1.5; color: #495057; background-color: #fff; background-clip: padding-box; border: 1px solid #ced4da; border-radius: .25rem;
+transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out; }
+.app_setting_container form .form-group { margin-bottom: 1rem; }
+body .app_setting_wrapper { width: 100%; }
+.card.app_setting_container { max-width: 800px; width: 100%; }
+.app_setting_container form .submit .btn-primary, .app_setting_container form .submit .button { background-color: #335eea; border-color: #335eea; box-shadow: none; color: #fff !important; border-radius: .375rem;
+cursor: pointer; display: inline-block; font-size: 1.0625rem; font-weight: 600; line-height: 1.6; padding: 10px 20px; text-align: center; transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out; -webkit-user-select: none; -moz-user-select: none; user-select: none; vertical-align: middle; }
+.app_setting_container form .btn-primary:hover { background-color: #2b50c7; border-color: #294bbb; color: #fff; text-decoration: none; }
+.automation_addon_container { background: #fff; padding: 40px; border-top: 2px solid #000; max-width: 350px; margin-top: 30px }
+.automation_addon_container .ttl { font-size: 24px; font-weight: bold; line-height: 30px }
+.automation_addon_container .descrption { margin: 20px 0px; font-size: 14px; line-height: 20px; min-height: 120px }
+.automation_addon_container button { padding: 15px 30px; border-radius: 5px; border: 0px; cursor: pointer; cursor: hand; background: #3d4070; color: #fff; font-size: 16px; font-weight: bold }
+.automation_addon_container .action_btns { min-height: 50px }
+.automation_addon_container .alreadyInstalled { font-size: 16px; border: 1px dashed #3d4070; text-align: center; padding: 10px; font-weight: bold; color: #3d4070 }
+.automation_addon_container .rMore a { margin-left: 15px; color: #000; font-size: 16px }
+.automation_addon_container.green { border-top-color: #00b86c }
+.automation_addon_container.green .ttl { color: #00b86c }
+.automation_addon_container.yellow { border-top-color: #ffc000 }
+.automation_addon_container.yellow .ttl { color: #ffc000 }
+#automation_multiple_addons .automation_addon_container { display: inline-block; vertical-align: top; margin-right: 20px }
